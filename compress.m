@@ -9,5 +9,5 @@ for j=1:N
     if (abs(w(j)) < tol)
         w(j)=0;
     end
-wc=w;
 end
+wc=w;
