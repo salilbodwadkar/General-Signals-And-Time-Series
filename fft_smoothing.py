@@ -1,3 +1,5 @@
+import numpy as np
+
 def fft_smoothing(x, r):
     xy = fft(x)
     if (r < 0) or (r > 1):
