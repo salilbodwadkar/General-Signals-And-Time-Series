@@ -1,4 +1,4 @@
-function error=fftcomp(t,y,r)
+function error=fftcomp(y,r)
 
 % compression with FFT
 
@@ -8,6 +8,6 @@ end;
 fy=fft(y);
 fyc=compress(fy,r);
 yc=ifft(fyc);
-plot(t,y,t, yc)
+plot(y, yc)
 error=norm(y-yc,2)/norm(y)
 end
